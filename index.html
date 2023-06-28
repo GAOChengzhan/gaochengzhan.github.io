@@ -52,10 +52,10 @@
     align-items: center;
     padding: 10px;
     }
-    .project-header h2 {
+    .header h2 {
       margin: 20px; /* adjust this value as needed */
     }
-    .project-header h4 {
+    .header h4 {
       margin: 15px; /* adjust this value as needed */
     }
     .p_title {
@@ -254,11 +254,11 @@
           </tbody>
         </table>
         <!-- Projects --> 
-        <div class="project-header">
+        <div class="header">
           <h2>Projects</h2>
         </div>
         
-        <div class="project-header">
+        <div class="header">
           <h4>Web/App Dev</h4>
         </div>
         <div class="project">          
@@ -303,7 +303,7 @@
               </div>        
             </div>
         </div> 
-        <div class="project-header">
+        <div class="header">
           <h4>Machine/Deep Learning</h4>
         </div>
         
@@ -348,6 +348,23 @@
               </div>        
           </div>
       </div>   
+      <div class="header">
+        <h2>Open Source Contributions</h2>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <div><a href="https://github.com/nestordemeure/question_extractor"><b>Question Extractor</b></a>
+            <p>
+              The original project provides a quick-tool to use a non-fine-tuned language model to extract question/answer pairs automatically from existing textual data.
+            </p>
+            <p><b>My contributions:</b> Provided two solustions to keeping reaching the token limit of the large language model.
+            One is to use the decorator from the third party's package 'tenacity' to keep retrying to send tokens after getting the error of reaching token limit, and the other is to  to distribute the task over multiple APIs to alleviate the burden.
+            </p>
+            </div>
+            </li>
+        </ul>
+      </div>
         <!-- honors and awards -->  
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody><tr>
