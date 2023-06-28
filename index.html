@@ -6,7 +6,6 @@
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <style type="text/css">
     /* Color scheme stolen from Sergey Karayev */
-    
     a {
       color: #1772d0;
       text-decoration: none;
@@ -48,7 +47,41 @@
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 34px;
     }
-    
+    .project {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    }
+    .project-header h2 {
+      margin: 20px; /* adjust this value as needed */
+    }
+    .project-header h4 {
+      margin: 15px; /* adjust this value as needed */
+    }
+    .p_title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .p_title a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .p_title a:hover {
+        color: #666;
+    }
+
+    .p_introduction {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
+        text-align: justify;
+    }
+
     .one {
       width: 160px;
       height: 160px;
@@ -122,8 +155,6 @@
             </td>
           </tr>
         </table>
-        
-        
         
         <!-- Education -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -222,15 +253,84 @@
           </tr>
           </tbody>
         </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <h2>Projects</h2>
-            </td>
-          </tr>
-        </table>
-          
+        <!-- Projects --> 
+        <div class="project-header">
+          <h2>Projects</h2>
+        </div>
+        
+        <div class="project-header">
+          <h4>Web/App Dev</h4>
+        </div>
+        <div class="project">          
+          <img src="images/yelpcamp.png" width="40%">
+          <div class="project-details" style="width: 60%">
+            <div class="p_title">
+              <a href="https://yelpcampbychristoffel.fly.dev/"><b>CampCompass</b></a>
+            </div>
+            <div class="p_introduction">
+              <ul>
+                <li>
+                  Created an Express framework-based website where people can share and fetch campgrounds information; 
+                </li>
+                <li>
+                  Mainly employed AJAX technology, and RESTful APIs to handle HTTP requests; 
+                </li>
+                <li>
+                  Provided the geolocation feature for users to view campgrounds by using Google Map API. 
+                </li>
+                <li>
+                  Deployed a web service in Fly to make application scalable and maintainable 
+                </li>
+              </ul>
+                      
+            </div>        
+          </div>
+      </div> 
+        <div class="project-header">
+          <h4>Machine/Deep Learning</h4>
+        </div>
+        
+        <div class="project">          
+            <img src="images/adain.png" width="40%">
+            <div class="project-details" style="width: 60%">
+              <div class="p_title">
+                <a href="https://github.com/solityde826/Revisiting_and_Refining_AdaIN"><b>Revisiting and Refining AdaIN Style Transfer Model</b></a>
+              </div>
+              <div class="p_introduction">
+                <ul>
+                  <li>
+                    Revisited the Adaptive Instance Normalization (AdaIN) style transfer, a significant advancement in the domain of style transfer.
+                  </li>
+                  <li>
+                    Introduced multi-level style transfer, applying the AdaIn module to various encoder levels instead of exclusively at the last level. The updated model generated more holistic and detailed stylized images, better retaining the original content. 
+                  </li>
+                  <li>
+                    Further enhancement was made by replacing the AdaIn module with an attention module, improving the model's capacity to stylize images beyond color, also considering other features like texture and shape.
+                  </li>
+                </ul>        
+              </div>        
+            </div>
+        </div>          
+        <div class="project">          
+          <img src="images/CNNHornets.png" width="40%">
+          <div class="project-details" style="width: 60%">
+            <div class="p_title">
+              <a href="https://github.com/solityde826/CNN-based-Image-Recognition-for-AsianGiant-Hornets"><b>CNN based Image Recognition for AsianGiant Hornets</b></a>
+            </div>
+            <div class="p_introduction">
+              <ul>
+                <li>Built an Auto-Regressive Integrated Moving Average model to predict the expansion of hornets;
+                </li>
+                <li>
+                  Trained a CNN-based model to distinguish Asian Giant Hornets from other bees;
+                </li>
+                <li>
+                  Implemented a multi-parameter optimization technique and finally F1-Score reached 0.992 while accuracy reached 0.987.
+                </li>
+              </ul>
+              </div>        
+          </div>
+      </div>   
         <!-- honors and awards -->  
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody><tr>
